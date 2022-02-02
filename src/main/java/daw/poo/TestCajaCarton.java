@@ -14,16 +14,18 @@ public class TestCajaCarton {
         //cajaGrande: ancho 250mm, alto 400mm, largo 500mm. Peso 200gr.
         //cajaChica: ancho 25mm, alto 30mm, largo 15mm. Peso 17gr.
     cajaGrande = new CajaCarton(250, 400, 500, 200);
-    cajaChica = new CajaCarton(25, 30, 15, 17);
+    cajaChica = new CajaCarton(25, 30, 15, 1200);
     
 //Muestra los datos de las cajas creadas usando métodos get.
-    System.out.print("Datos de caja Grande: " + cajaGrande.getAltoMilimetros() + ", "
+    System.out.println("Datos de caja Grande: " + cajaGrande.getAltoMilimetros() + ", "
             + cajaGrande.getAnchoMilimetros() + ", " + cajaGrande.getLargoMilimetros()
             + ", " + cajaGrande.getPesoGramos());
-    System.out.print("\nDatos de caja Chica: " + cajaChica.getAltoMilimetros() + ", "
+    System.out.println("Datos de caja Chica: " + cajaChica.getAltoMilimetros() + ", "
             + cajaChica.getAnchoMilimetros() + ", " + cajaChica.getLargoMilimetros()
             + ", " + cajaChica.getPesoGramos());
 
+        System.out.println("Actividad 10 relacion de ejercicios B2");
+        cajaChica.setPesoGramos(1200);
     }
     
 }

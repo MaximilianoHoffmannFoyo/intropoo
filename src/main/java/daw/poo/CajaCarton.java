@@ -44,6 +44,12 @@ public class CajaCarton {
 
     public void setPesoGramos(int pesoGramos) {
         this.pesoGramos = pesoGramos;
+        if(pesoGramos < 0 || pesoGramos > 1000){
+            System.out.println("El peso pasado como argumento no es válido "
+                    + "y se establecerá a cero.");
+            this.pesoGramos = 0;
+        }
+        
     }
     
 //Añade, dentro de la definición de la clase anterior, un método constructor con 
